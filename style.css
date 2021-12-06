@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F4F5F5;
+}
+.first{
+    border: 1px solid #1B3461;
+    position: relative;
+}
+.first::before,.second::after,.third::after,.forth::after,.fifth::after,
+.sixth::after,.seventh::after,.eigth::after,.ninth::after,.tenth::after,
+.eleventh::after,.toelfth::after{
+    content: "январь";
+    position: absolute;
+    bottom: -35px;
+    left: -20px;
+    transform: rotateZ(-90deg);
+    font-family:sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #18A0FB;
+    font-weight: bold;
+}
+.second::after{
+    content: "февраль";
+    left: -23px;
+}
+.third::after{
+    content: "март";
+    left: -14px;
+}
+.forth::after{
+    content: "апрель";
+}
+.fifth::after{
+    content: "май";
+    left: -10px;
+}
+.sixth::after{
+    content: "июнь";
+    left: -15px;
+}
+.sixth::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 140px;
+    border: 2px dashed red;
+    top: -150px;
+}
+.seventh::after{
+    content: "июль";
+    left: -15px;
+}
+.eigth::after{
+    content: "август";
+}
+.ninth::after{
+    content: "сентябрь";
+    left: -28px;
+    bottom: -40px;
+}
+.tenth::after{
+    content: "октябрь";
+    left: -24px;
+}
+.eleventh::after{
+    content: "ноябрь";
+}
+.toelfth::after{
+    content: "декабрь";
+    left: -24px;
+}
+/* .first::after,.second::after,.third::after,.forth::after,.fifth::after,
+.sixth::after,.seventh::after,.eigth::after,.ninth::after,.tenth::after,
+.eleventh::after,.toelfth::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -7px;
+    background: blue;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 3pt 2pt red;
+    z-index: 999;
+} */
+.circle-div{
+    position: absolute;
+    top: -14px;
+    left: -10px;
+    color: #1B3461;
+    padding: 3px;
+    border: 1px solid #1B3461;
+    border-radius: 100%;
+    z-index: 9999999;
+    font-size: 14px;
+    font-weight: bold;
+}
+.graf{
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    border: 1px solid #1B3461;
+    transform-origin: top left;
+}
+.second,.third,.forth,.fifth,
+.sixth,.seventh,.eigth,.ninth,.tenth,
+.eleventh,.toelfth{
+    border: 1px solid #1B3461;
+    margin-left: 50px;
+    position: relative;
+}
+.big-div{
+    position: relative;
+}
+.grafik-div{
+    display: flex;
+    align-items: flex-end;
+}
+.months>div{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.july-div{
+    position: absolute;
+    top: -150px;
+    white-space: nowrap;
+    left: 20px;
+}
+.year{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FF0000;
+    white-space: nowrap;
+}
+@media (max-width: 603px) and (min-width: 445px){
+    .second, .third, .forth, .fifth, .sixth, .seventh, .eigth, .ninth, .tenth, .eleventh, .toelfth {
+        margin-left: 35px;
+    }
+}
+@media (max-width: 444px) and (min-width: 320px){
+    .second, .third, .forth, .fifth, .sixth, .seventh, .eigth, .ninth, .tenth, .eleventh, .toelfth {
+        margin-left: 24px;
+    }
+    .circle-div {
+        top: -14px;
+        left: -10px;
+        padding: 3px;
+        font-size: 14px;
+    }
+    .inform{
+        font-size: 13px;
+    }
+}
